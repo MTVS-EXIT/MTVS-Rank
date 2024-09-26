@@ -33,12 +33,15 @@ const App = () => {
                     hazards: fighter.damage,
                     playtime: fighter.playtime,
                     img: 'images/Firefighter1.jpg'
-                }));
+                }))
+                    .sort((a, b) => a.playtime - b.playtime); // 구조 시간에 따라 오름차순 정렬;
+                
                 setFirefighters(transformedData);
             } else {
                 console.error("API 응답 오류: ", data.error);
             }
         } catch (error) {
+
             console.error("Error fetching data:", error);
         }
     };
@@ -57,7 +60,9 @@ const App = () => {
                     safeDetected: drone.safe,
                     playtime: drone.playtime,
                     img: 'images/Firefighter1.jpg' // 이미지 경로를 API 응답에서 가정
-                }));
+                }))
+                  .sort((a, b) => a.playtime - b.playtime); // 구조 시간에 따라 오름차순 정렬;
+                    
                 setDrones(transformedData);
             }
         } catch (error) {

@@ -2,7 +2,7 @@ import React from 'react';
 
 const FirefighterTable = ({ firefighters, searchText }) => {
     const filteredFirefighters = firefighters.filter(firefighter =>
-        firefighter.name.toLowerCase().includes(searchText)
+        firefighter.name && firefighter.name.toLowerCase().includes(searchText.toLowerCase())
     );
 
     return (
@@ -34,5 +34,5 @@ const FirefighterTable = ({ firefighters, searchText }) => {
         </table>
     );
 };
-//
+
 export default FirefighterTable;

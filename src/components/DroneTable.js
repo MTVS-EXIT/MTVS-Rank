@@ -2,7 +2,7 @@ import React from 'react';
 
 const DroneTable = ({ drones, searchText }) => {
     const filteredDrones = drones.filter(drone =>
-        drone.name.toLowerCase().includes(searchText)
+        drone.name && drone.name.toLowerCase().includes(searchText.toLowerCase())
     );
 
     return (

@@ -11,5 +11,5 @@ const SearchInput = ({ searchText, onSearchChange }) => {
         />
     );
 };
-
+//
 export default SearchInput;

@@ -22,7 +22,7 @@ const DroneTable = ({ drones, searchText }) => {
                 {filteredDrones.map((drone, index) => (
                     <tr key={index}>
                         <td>{index + 1}</td>
-                        <td> 
+                        <td>
                             <p>{drone.name}</p>
                         </td>
                         <td>{drone.attempts}</td>

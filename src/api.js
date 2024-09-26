@@ -12,3 +12,4 @@ export const fetchDrones = async () => {
     const response = await axios.get(`${API_URL}/drones`);
     return response.data; // 드론 데이터 반환
 };
+//

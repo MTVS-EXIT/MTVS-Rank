@@ -34,5 +34,5 @@ const FirefighterTable = ({ firefighters, searchText }) => {
         </table>
     );
 };
-
+//
 export default FirefighterTable;

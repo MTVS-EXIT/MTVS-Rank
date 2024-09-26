@@ -7,3 +7,4 @@ export const drones = [
     { name: 'Drone Alpha', attempts: 20, hazardDetected: 15, cautionDetected: 5, safeDetected: 2, playtime: 100, img: 'images/Drone1.jpg' },
     { name: 'Drone Beta', attempts: 18, hazardDetected: 12, cautionDetected: 4, safeDetected: 1, playtime: 130, img: 'images/Drone2.jpg' },
 ];
+//
